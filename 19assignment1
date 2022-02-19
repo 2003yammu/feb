@@ -1,0 +1,15 @@
+def mp(n):
+    for i in range(2,n):
+        if n%i==0:
+            return False
+    return True
+t=int(input())
+for i in range(t):
+    x=input().split(' ')
+    b=int(x[0])
+    e=int(x[1])
+    c=0
+    for i in range(b+1,e):
+       if mp(i):
+         c+=1
+    print(c)
